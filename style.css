@@ -6,7 +6,7 @@
             overflow-x: hidden;
         }
         #header-img{
-            position: relative;
+            position: top;
             width: 100vw;
             height: 500px;
             background-image: linear-gradient(to right, rgba(0, 0, 0, 0.075),rgba(0, 0, 0, 0.034)), url('headerimage2.avif');
@@ -136,8 +136,10 @@
             color: black;
         }
         .locations-div{
+            display: flex;
+            align-items: center;
             width: 100%;
-            height: 50px;
+            height: 60px;
             background-color: white;
             border: 2px solid black;
             border-radius: 10px;
@@ -151,10 +153,11 @@
             margin-left: 3%;
         }
         .fas{
-            margin-top: 5px;
+            margin-top: 8px;
+            margin-left: auto;
+            margin-right: 4px;
             display: flex;
             float: right;
-
         }
         .btn{
             margin-left: 2%;
@@ -163,7 +166,7 @@
             margin-left: 10px;
         }
         .appimage{
-            margin-left: 60%;
+            margin-left: auto;
         }
         .display{
             margin-top: 4%;
@@ -201,25 +204,82 @@
             padding-left: 30px;
             padding-right: 30px;
         }
-
+        @media only screen and (max-width:450px){
+            .locations-div{
+                display: block;
+                width: 100%;
+                height: 50px;
+                padding: right 10px; 
+            }
+        }
+        @media only screen and (max-width:600px){
+            .locations-div{
+                display: block;
+            }
+        }
         @media only screen and (max-width:768px){
             .locations-div{
-                margin-bottom: 10px;
+                display: block;
+                margin: 10px;
             }
             .card{
-                margin-bottom: 20px;
+                margin-top: 0;
+                margin-bottom: 5px;
+                transform: scale(.7);
+            }
+            .card:hover{
+                transform: scale(.8);
             }
             .nav-menu{
-                font-size: 10px;
+                display: block;
+                font-size: 5px;
             }
             .nav-menu p.signup{
+                display: block;
                 font-size: 10px;
             }
             .nav-menu p.login{
+                display: block;
                 font-size: 10px;
             }
             .nav-menu p.addrestaurant{
+                display: none;
                 font-size: 10px;
+            }
+            .nav-menu p.app{
+                margin-top: 12px;
+                font-size: 10px;
+            }
+            .appimage{
+                display: none;
+            }
+            .footer{
+                display: block;
+            }
+            .searchbox{
+                width: 20vw;
+                height: 10vw;
+                background-color: white;
+                border: none;
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+                padding-left: 20px;
+                outline: none;
+                font-weight:400;
+                font-size: 18px;
+            }
+            .search-btn{
+                width: 20vw;
+                background-color: red;
+                color: white;
+                border: none;
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+            .downloadbtn{
+                width: 30%;
             }
         }
     </style>
