@@ -1,0 +1,225 @@
+<style>
+        html,body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            overflow-x: hidden;
+        }
+        #header-img{
+            position: relative;
+            width: 100vw;
+            height: 500px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.075),rgba(0, 0, 0, 0.034)), url('headerimage2.avif');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header{
+            width: 100vw;
+            height: 60px;
+        }
+        .nav-menu{
+            width: 60vw;
+            height: 60px;
+        }
+        .nav-menu p.app{
+            display: flex;
+            float: left;
+            text-decoration-color: white;
+            color: white;
+            margin-top: 3px;
+            font-size: 18px;
+        }
+        .nav-menu p.signup{
+            display: flex;
+            float: right;
+            color: white;
+            margin-top: 3px;
+            font-size: 20px;
+        }
+        .nav-menu p.addrestaurant{
+            display: flex;
+            float: right;
+            color: white;
+            margin-top: 3px;
+            font-size: 20px;
+        }
+        .nav-menu p.login{
+            display: flex;
+            float: right;
+            color: white;
+            margin-top: 3px;
+            font-size: 20px;
+        }
+        .gomato{
+            display: block;
+            font-weight: bolder;
+            color: #fff;
+            justify-content: center;
+            font-size: 68px;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .header-flex{
+            margin-top: 100px;
+        }
+        .nav-link{
+            border-bottom: 0px, solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+        .nav-link:hover{
+            border-bottom: 5px solid white;
+        }
+        .nlink{
+            border-bottom: 0px, solid black;
+            transition: border-bottom 0.3s;
+            cursor: pointer;
+        }
+        .searchbox{
+            width: 30vw;
+            height: 60px;
+            background-color: white;
+            border: none;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+            padding-left: 20px;
+            outline: none;
+            font-weight:400;
+            font-size: 18px;
+        }
+        .search-btn{
+            width: 130px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #second-section{
+            margin-top: 20px;
+            margin-bottom: 50px;
+        }
+        .card{
+            width: 100%;
+            height: 260px;
+            background-color: white;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px #ccc;
+            overflow: hidden;
+            transition:box-shadow 0.3s;
+            transform: scale(1);
+
+        }
+        .card:hover{
+            box-shadow: 1px 1px 10px #000;
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .card-bottom{
+            position: absolute;
+            background-color: white;
+            height: 50px;
+            width: 100%;
+            margin-top: 210px;
+        }
+        #popular-locations{
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        .popular-heading{
+            font-size: 40px;
+            color: black;
+        }
+        .locations-div{
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .locations-div:hover{
+            box-shadow: 1px 1px 5px #ccc;
+        }
+        .name{
+            margin-top: 2%;
+            margin-left: 3%;
+        }
+        .fas{
+            margin-top: 5px;
+            display: flex;
+            float: right;
+
+        }
+        .btn{
+            margin-left: 2%;
+        }
+        .downloadbtn{
+            margin-left: 10px;
+        }
+        .appimage{
+            margin-left: 60%;
+        }
+        .display{
+            margin-top: 4%;
+            font-weight: bold;
+            font-size: 50px;
+        }
+        #get-gomato-app{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            padding-top: 30px;
+            padding-bottom: 30px;
+            background-color: rgba(234, 241,138,0.1);
+        }
+        .email-input{
+            width: 250px;
+            height: 40px;
+            padding-left: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 10px;
+            background-color: white;
+        }
+        
+        .footer{
+            display: flex;
+            justify-content: center;
+            flex-grow: 1;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+        .footernobullets{
+            list-style-type: none;
+            margin-left: 30px;
+            flex-grow: 1;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        @media only screen and (max-width:768px){
+            .locations-div{
+                margin-bottom: 10px;
+            }
+            .card{
+                margin-bottom: 20px;
+            }
+            .nav-menu{
+                font-size: 10px;
+            }
+            .nav-menu p.signup{
+                font-size: 10px;
+            }
+            .nav-menu p.login{
+                font-size: 10px;
+            }
+            .nav-menu p.addrestaurant{
+                font-size: 10px;
+            }
+        }
+    </style>
